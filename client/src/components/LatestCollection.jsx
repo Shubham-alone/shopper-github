@@ -11,7 +11,7 @@ const LatestCollection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5436/products")
+      .get("https://shopper-github-backend.vercel.app/products")
       .then((response) => {
         setProducts(response.data.list);
         setLoading(false);

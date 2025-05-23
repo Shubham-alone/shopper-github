@@ -39,7 +39,7 @@ const Orders = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:5436/products")
+    axios.get("https://shopper-github-backend.vercel.app/products")
       .then((response) => {
         let res = response.data.list;
         setProductsim(res);

@@ -43,7 +43,7 @@ const Collection = () => {
 
       useEffect(() => {
         axios
-          .get("http://localhost:5436/products")
+          .get("https://shopper-github-backend.vercel.app/products")
           .then((response) => {
             let res = response.data.list
             setProducts(res);

@@ -12,7 +12,7 @@ const BestSeller = () => {
 
     useEffect(() => {
     axios
-      .get("http://localhost:5436/bestseller")
+      .get("https://shopper-github-backend.vercel.app/bestseller")
       .then((response) => {
         setProducts(response.data.product);
         setLoading(false);

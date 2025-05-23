@@ -16,7 +16,7 @@ const Product = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5436/products/id/${id}`)
+      .get(`https://shopper-github-backend.vercel.app/products/id/${id}`)
       .then((response) => {
         const fetchedProduct = response.data.product[0];
         setProduct(fetchedProduct);

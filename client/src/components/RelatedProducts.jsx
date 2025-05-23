@@ -14,7 +14,7 @@ const RelatedProducts = ({ currentCategory }) => {
 
   const fetchProducts = (category) => {
     
-        axios.get(`http://localhost:5436/products/category/${category}`)
+        axios.get(`https://shopper-github-backend.vercel.app/products/category/${category}`)
           .then((response) => {
             const fetchedProduct = response.data.product || [];
             setRelated(fetchedProduct)
